@@ -1,5 +1,6 @@
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -9,6 +10,8 @@ import java.io.IOException;
 
 import static io.restassured.RestAssured.*;
 
+@Epic("Currency APIs")
+@Feature("Current exchange rates")
 public class PositiveCurrencyTest extends BaseTest{
 
 
@@ -16,7 +19,9 @@ public class PositiveCurrencyTest extends BaseTest{
 // Current average CHF exchange rate
 // http://api.nbp.pl/api/exchangerates/rates/a/chf/?format=json
 
-@Test (dataProviderClass = DataProviderClass.class, dataProvider = "Currencies")
+@Test (dataProviderClass = DataProviderClass.class, dataProvider = "Currencies", description = "User should achieve exchange rate for current date")
+@Severity(SeverityLevel.CRITICAL)
+@Link("http://api.nbp.pl/en.html")
     public void currentAverageExchangeRateTest(String table, String code, String currency) throws IOException {
 
 

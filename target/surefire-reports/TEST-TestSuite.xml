@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="7.55" tests="17" errors="0" skipped="0" failures="17">
+<testsuite name="TestSuite" time="1.814" tests="9" errors="0" skipped="0" failures="4">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.1+13-LTS"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib"/>
     <property name="gopherProxySet" value="false"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/anotsek/IdeaProjects/ApiExampleTests"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/anotsek/IdeaProjects/ApiNBPTests"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="PL"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/anotsek/IdeaProjects/ApiExampleTests"/>
+    <property name="user.dir" value="/Users/anotsek/IdeaProjects/ApiNBPTests"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="11.0.1+13-LTS"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
@@ -63,333 +63,46 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="3.781">
-    <failure message="The following asserts failed:&#10;	expected [400] but found [404],&#10;	expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
-	expected [400] but found [404],
-	expected [true] but found [false]
+  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="1.577">
+    <failure message="The following asserts failed:&#10;	Returned incorrect status code:  expected [400] but found [404],&#10;	Returned incorrect response body:  expected [400 Bad Request] but found [404 NotFound - Not Found - Brak danych]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
+	Returned incorrect status code:  expected [400] but found [404],
+	Returned incorrect response body:  expected [400 Bad Request] but found [404 NotFound - Not Found - Brak danych]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:19)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:31)
 </failure>
     <system-out><![CDATA[Configuring TestNG with: TestNG652Configurator
-404
-404 NotFound - Not Found - Brak danych
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.135">
-    <failure message="The following asserts failed:&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false]
+  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.143">
+    <failure message="The following asserts failed:&#10;	Returned incorrect response body:  expected [400 Bad Request] but found [400 BadRequest - Bad Request - Nieprawidłowa wartość parametru: {table}=&apos;r&apos;]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
+	Returned incorrect response body:  expected [400 Bad Request] but found [400 BadRequest - Bad Request - Nieprawidłowa wartość parametru: {table}='r']
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:19)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:31)
 </failure>
-    <system-out><![CDATA[404
-404 NotFound - Not Found - Brak danych
-]]></system-out>
   </testcase>
-  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.152">
-    <failure message="The following asserts failed:&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false]
+  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.925">
+    <failure message="The following asserts failed:&#10;	Returned incorrect status code:  expected [400] but found [404],&#10;	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
+	Returned incorrect status code:  expected [400] but found [404],
+	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:19)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:31)
 </failure>
-    <system-out><![CDATA[400
-400 BadRequest - Bad Request - Nieprawidłowa wartość parametru: {table}='r'
-]]></system-out>
   </testcase>
-  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.184">
-    <failure message="The following asserts failed:&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false]
+  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.251">
+    <failure message="The following asserts failed:&#10;	Returned incorrect status code:  expected [400] but found [404],&#10;	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
+	Returned incorrect status code:  expected [400] but found [404],
+	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:19)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:31)
 </failure>
-    <system-out><![CDATA[404
-﻿404 NotFound
-]]></system-out>
   </testcase>
-  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.127">
-    <failure message="The following asserts failed:&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:19)
-</failure>
-    <system-out><![CDATA[404
-﻿404 NotFound
-]]></system-out>
-  </testcase>
-  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.172">
-    <failure message="The following asserts failed:&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:19)
-</failure>
-    <system-out><![CDATA[404
-﻿404 NotFound
-]]></system-out>
-  </testcase>
-  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.138">
-    <failure message="The following asserts failed:&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:19)
-</failure>
-    <system-out><![CDATA[404
-﻿404 NotFound
-]]></system-out>
-  </testcase>
-  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.177">
-    <failure message="The following asserts failed:&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:19)
-</failure>
-    <system-out><![CDATA[404
-﻿404 NotFound
-]]></system-out>
-  </testcase>
-  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.153">
-    <failure message="The following asserts failed:&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:19)
-</failure>
-    <system-out><![CDATA[404
-﻿404 NotFound
-]]></system-out>
-  </testcase>
-  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.132">
-    <failure message="The following asserts failed:&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:19)
-</failure>
-    <system-out><![CDATA[404
-﻿404 NotFound
-]]></system-out>
-  </testcase>
-  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.132">
-    <failure message="The following asserts failed:&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:19)
-</failure>
-    <system-out><![CDATA[404
-﻿404 NotFound
-]]></system-out>
-  </testcase>
-  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.141">
-    <failure message="The following asserts failed:&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false],&#10;	expected [400] but found [404],&#10;	expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false],
-	expected [400] but found [404],
-	expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:19)
-</failure>
-    <system-out><![CDATA[404
-﻿404 NotFound
-]]></system-out>
-  </testcase>
-  <testcase name="currentAverageExchangeRateTest" classname="PositiveCurrencyTest" time="3.769">
-    <failure message="Unexpected character (&apos;﻿&apos; (code 65279 / 0xfeff)): expected a valid value (number, String, array, object, &apos;true&apos;, &apos;false&apos; or &apos;null&apos;)&#10; at [Source: (String)&quot;﻿404 NotFound&quot;; line: 1, column: 2]" type="com.fasterxml.jackson.core.JsonParseException">com.fasterxml.jackson.core.JsonParseException: Unexpected character ('﻿' (code 65279 / 0xfeff)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
- at [Source: (String)"﻿404 NotFound"; line: 1, column: 2]
-	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1804)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:669)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:567)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1894)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:749)
-	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4141)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3004)
-	at PositiveCurrencyTest.currentAverageExchangeRateTest(PositiveCurrencyTest.java:27)
-</failure>
-    <system-out><![CDATA[﻿404 NotFound
-]]></system-out>
-  </testcase>
-  <testcase name="currentAverageExchangeRateTest" classname="PositiveCurrencyTest" time="0.133">
-    <failure message="Unexpected character (&apos;﻿&apos; (code 65279 / 0xfeff)): expected a valid value (number, String, array, object, &apos;true&apos;, &apos;false&apos; or &apos;null&apos;)&#10; at [Source: (String)&quot;﻿404 NotFound&quot;; line: 1, column: 2]" type="com.fasterxml.jackson.core.JsonParseException">com.fasterxml.jackson.core.JsonParseException: Unexpected character ('﻿' (code 65279 / 0xfeff)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
- at [Source: (String)"﻿404 NotFound"; line: 1, column: 2]
-	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1804)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:669)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:567)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1894)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:749)
-	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4141)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3004)
-	at PositiveCurrencyTest.currentAverageExchangeRateTest(PositiveCurrencyTest.java:27)
-</failure>
-    <system-out><![CDATA[﻿404 NotFound
-]]></system-out>
-  </testcase>
-  <testcase name="currentAverageExchangeRateTest" classname="PositiveCurrencyTest" time="2.208">
-    <failure message="Unexpected character (&apos;﻿&apos; (code 65279 / 0xfeff)): expected a valid value (number, String, array, object, &apos;true&apos;, &apos;false&apos; or &apos;null&apos;)&#10; at [Source: (String)&quot;﻿404 NotFound&quot;; line: 1, column: 2]" type="com.fasterxml.jackson.core.JsonParseException">com.fasterxml.jackson.core.JsonParseException: Unexpected character ('﻿' (code 65279 / 0xfeff)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
- at [Source: (String)"﻿404 NotFound"; line: 1, column: 2]
-	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1804)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:669)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:567)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1894)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:749)
-	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4141)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3004)
-	at PositiveCurrencyTest.currentAverageExchangeRateTest(PositiveCurrencyTest.java:27)
-</failure>
-    <system-out><![CDATA[﻿404 NotFound
-]]></system-out>
-  </testcase>
-  <testcase name="currentAverageExchangeRateTest" classname="PositiveCurrencyTest" time="0.545">
-    <failure message="Unexpected character (&apos;﻿&apos; (code 65279 / 0xfeff)): expected a valid value (number, String, array, object, &apos;true&apos;, &apos;false&apos; or &apos;null&apos;)&#10; at [Source: (String)&quot;﻿404 NotFound&quot;; line: 1, column: 2]" type="com.fasterxml.jackson.core.JsonParseException">com.fasterxml.jackson.core.JsonParseException: Unexpected character ('﻿' (code 65279 / 0xfeff)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
- at [Source: (String)"﻿404 NotFound"; line: 1, column: 2]
-	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1804)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:669)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:567)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1894)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:749)
-	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4141)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3004)
-	at PositiveCurrencyTest.currentAverageExchangeRateTest(PositiveCurrencyTest.java:27)
-</failure>
-    <system-out><![CDATA[﻿404 NotFound
-]]></system-out>
-  </testcase>
-  <testcase name="currentAverageExchangeRateTest" classname="PositiveCurrencyTest" time="0.127">
-    <failure message="Unexpected character (&apos;﻿&apos; (code 65279 / 0xfeff)): expected a valid value (number, String, array, object, &apos;true&apos;, &apos;false&apos; or &apos;null&apos;)&#10; at [Source: (String)&quot;﻿404 NotFound&quot;; line: 1, column: 2]" type="com.fasterxml.jackson.core.JsonParseException">com.fasterxml.jackson.core.JsonParseException: Unexpected character ('﻿' (code 65279 / 0xfeff)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
- at [Source: (String)"﻿404 NotFound"; line: 1, column: 2]
-	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1804)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:669)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:567)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1894)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:749)
-	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4141)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3004)
-	at PositiveCurrencyTest.currentAverageExchangeRateTest(PositiveCurrencyTest.java:27)
-</failure>
-    <system-out><![CDATA[﻿404 NotFound
-]]></system-out>
-  </testcase>
+  <testcase name="currentAverageExchangeRateTest" classname="PositiveCurrencyTest" time="0.237"/>
+  <testcase name="currentAverageExchangeRateTest" classname="PositiveCurrencyTest" time="0.19"/>
+  <testcase name="currentAverageExchangeRateTest" classname="PositiveCurrencyTest" time="0.12"/>
+  <testcase name="currentAverageExchangeRateTest" classname="PositiveCurrencyTest" time="0.184"/>
+  <testcase name="currentAverageExchangeRateTest" classname="PositiveCurrencyTest" time="0.121"/>
 </testsuite>

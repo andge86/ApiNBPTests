@@ -1,3 +1,4 @@
+import io.qameta.allure.Step;
 import org.testng.asserts.SoftAssert;
 
 import java.text.DateFormat;
@@ -12,7 +13,7 @@ public class BaseTest {
 
 
 
-
+    @Step("Achieved date in required format")
     public static String currentDate(String formatPattern){
 
         DateFormat dateFormat = new SimpleDateFormat(formatPattern); //"yyyy-MM-dd"
