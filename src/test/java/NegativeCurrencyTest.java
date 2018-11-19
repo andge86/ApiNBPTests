@@ -1,4 +1,5 @@
 import io.qameta.allure.*;
+import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -20,8 +21,12 @@ public class NegativeCurrencyTest extends BaseTest {
     public void incorrectCurrentAverageExchangeRateTest(String code, String table) {
 
 
-        Response response = given().when().param("?format=json")
-                .get(ENDPOINT + "/api/exchangerates/rates/"+table+"/"+code+"/");
+        Response response = given()
+                           .urlEncodingEnabled(false)
+                           .filter(new AllureRestAssured())
+                           .when()
+                           .param("?format=json")
+                           .get(ENDPOINT + "/api/exchangerates/rates/"+table+"/"+code+"/");
     //    System.out.println("Response code: --> " + response.getStatusCode());
     //    System.out.println("Response body: --> " + response.body().asString());
 

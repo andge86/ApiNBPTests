@@ -1,6 +1,7 @@
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.qameta.allure.*;
+import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -25,8 +26,12 @@ public class PositiveCurrencyTest extends BaseTest{
     public void currentAverageExchangeRateTest(String table, String code, String currency) throws IOException {
 
 
-    Response response = given().when().param("?format=json")
-                               .get(ENDPOINT + "/api/exchangerates/rates/"+table+"/"+code+"/");
+    Response response = given()
+                       .urlEncodingEnabled(false)
+                       .filter(new AllureRestAssured())
+                       .when()
+                       .param("?format=json")
+                       .get(ENDPOINT + "/api/exchangerates/rates/"+table+"/"+code+"/");
 
     System.out.println(response.body().asString());
     ObjectMapper objectMapper = new ObjectMapper();
