@@ -1,0 +1,265 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 17, Errors: 0, Skipped: 0, Time elapsed: 13.412 sec <<< FAILURE! - in TestSuite
+incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 3.781 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	expected [400] but found [404],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:19)
+
+incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.135 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:19)
+
+incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.152 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:19)
+
+incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.184 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:19)
+
+incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.127 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:19)
+
+incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.172 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:19)
+
+incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.138 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:19)
+
+incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.177 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:19)
+
+incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.153 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:19)
+
+incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.132 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:19)
+
+incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.132 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:19)
+
+incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.141 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false],
+	expected [400] but found [404],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:19)
+
+currentAverageExchangeRateTest(PositiveCurrencyTest)  Time elapsed: 3.769 sec  <<< FAILURE!
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('﻿' (code 65279 / 0xfeff)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: (String)"﻿404 NotFound"; line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1804)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:669)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:567)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1894)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:749)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4141)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3004)
+	at PositiveCurrencyTest.currentAverageExchangeRateTest(PositiveCurrencyTest.java:27)
+
+currentAverageExchangeRateTest(PositiveCurrencyTest)  Time elapsed: 0.133 sec  <<< FAILURE!
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('﻿' (code 65279 / 0xfeff)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: (String)"﻿404 NotFound"; line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1804)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:669)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:567)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1894)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:749)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4141)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3004)
+	at PositiveCurrencyTest.currentAverageExchangeRateTest(PositiveCurrencyTest.java:27)
+
+currentAverageExchangeRateTest(PositiveCurrencyTest)  Time elapsed: 2.208 sec  <<< FAILURE!
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('﻿' (code 65279 / 0xfeff)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: (String)"﻿404 NotFound"; line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1804)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:669)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:567)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1894)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:749)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4141)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3004)
+	at PositiveCurrencyTest.currentAverageExchangeRateTest(PositiveCurrencyTest.java:27)
+
+currentAverageExchangeRateTest(PositiveCurrencyTest)  Time elapsed: 0.545 sec  <<< FAILURE!
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('﻿' (code 65279 / 0xfeff)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: (String)"﻿404 NotFound"; line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1804)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:669)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:567)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1894)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:749)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4141)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3004)
+	at PositiveCurrencyTest.currentAverageExchangeRateTest(PositiveCurrencyTest.java:27)
+
+currentAverageExchangeRateTest(PositiveCurrencyTest)  Time elapsed: 0.127 sec  <<< FAILURE!
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('﻿' (code 65279 / 0xfeff)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: (String)"﻿404 NotFound"; line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1804)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:669)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:567)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1894)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:749)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4141)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3004)
+	at PositiveCurrencyTest.currentAverageExchangeRateTest(PositiveCurrencyTest.java:27)
+
