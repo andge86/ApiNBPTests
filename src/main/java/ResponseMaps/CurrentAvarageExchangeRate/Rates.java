@@ -1,4 +1,4 @@
-package ResponceMaps.CurrentAvarageExchangeRate;
+package ResponseMaps.CurrentAvarageExchangeRate;
 
 public class Rates {
 

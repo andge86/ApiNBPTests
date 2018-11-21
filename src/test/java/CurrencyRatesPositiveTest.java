@@ -1,5 +1,5 @@
-import ResponceMaps.CurrentAvarageExchangeRate.CurrentAverageExchangeRate;
-import ResponceMaps.CurrentBidAskExchangeRate.CurrentBidAskExchangeRate;
+import ResponseMaps.CurrentAvarageExchangeRate.CurrentAverageExchangeRate;
+import ResponseMaps.CurrentBidAskExchangeRate.CurrentBidAskExchangeRate;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.qameta.allure.*;
 import io.qameta.allure.restassured.AllureRestAssured;

@@ -1,4 +1,4 @@
-package ResponceMaps.CurrentBidAskExchangeRate;
+package ResponseMaps.CurrentBidAskExchangeRate;
 
 public class Rates {
 

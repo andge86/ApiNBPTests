@@ -1,4 +1,4 @@
-package ResponceMaps.CurrentAvarageExchangeRate;
+package ResponseMaps.CurrentAvarageExchangeRate;
 
 import java.util.ArrayList;
 import java.util.List;

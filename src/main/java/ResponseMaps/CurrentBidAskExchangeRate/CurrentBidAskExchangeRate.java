@@ -1,4 +1,4 @@
-package ResponceMaps.CurrentBidAskExchangeRate;
+package ResponseMaps.CurrentBidAskExchangeRate;
 
 import java.util.ArrayList;
 import java.util.List;
