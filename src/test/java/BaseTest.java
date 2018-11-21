@@ -13,7 +13,6 @@ public class BaseTest {
 
 
 
-    @Step("Achieved date in required format")
     public static String currentDate(String formatPattern){
 
         DateFormat dateFormat = new SimpleDateFormat(formatPattern); //"yyyy-MM-dd"

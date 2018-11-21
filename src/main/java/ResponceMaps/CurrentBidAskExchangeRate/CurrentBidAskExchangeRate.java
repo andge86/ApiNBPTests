@@ -1,7 +1,9 @@
+package ResponceMaps.CurrentBidAskExchangeRate;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class CurrentAverageExchangeRate {
+public class CurrentBidAskExchangeRate {
 
    private String table;
    private String currency;

@@ -1,6 +1,6 @@
 import org.testng.annotations.DataProvider;
 
-public class DataProviderClass {
+public class DataProvidersClass {
 
 
 
@@ -8,12 +8,9 @@ public class DataProviderClass {
     public static Object[][] CurrenciesData() {
 
         return new Object[][]{
-                {"a", "chf", "frank szwajcarski"},
-                {"a", "usd", "dolar amerykański"},
-                {"a", "eur", "euro"},
-                {"a", "rub", "rubel rosyjski"},
-                {"a", "uah", "hrywna (Ukraina)"},
-
+                {"chf", "frank szwajcarski"},
+                {"usd", "dolar amerykański"},
+                {"eur", "euro"}
         };
     }
 
@@ -23,13 +20,14 @@ public class DataProviderClass {
 
         return new Object[][]{
                 {"chg", "a"},
+                {"eer", "c"},
                 {"usb", "b"},
                 {"eur", "r"},
-                {"rub", "aa"},
+                {"usd", "aa"},
                 {"euro", "a"},
-                {"rubrub", "a"},
-                {"usd1", "euro"},
-                {"1", "euro"},
+                {"eureur", "a"},
+                {"usd1", "c"},
+                {"1", "c"},
                 {"", ""},
                 {"rub", ""},
                 {"", "a"},
