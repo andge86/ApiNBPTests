@@ -18,10 +18,10 @@ public class CurrencyRatesPositiveTest extends BaseTest {
 
 
 @Test (dataProviderClass = DataProvidersClass.class, dataProvider = "Currencies",
-       description = "Achieve current exchange rate and name {1} for {0} in table = a")
+       description = "Achieve current average exchange rate and name {currency} for passed {code}")
 @Story("User should be able to achieve average price of passed currency")
-@Description("User should achieve exchange rate for current date for passed currency with table = a" +
-        " (table A of middle exchange rates of foreign currencies)")
+@Description("User should achieve average exchange rate for current date for passed currency in table = a" +
+        " (table A provides middle exchange rates of foreign currencies)")
 @Severity(SeverityLevel.CRITICAL)
 @Link("http://api.nbp.pl/en.html")
     public void currentAverageExchangeRateTest(String code, String currency) throws IOException {
@@ -57,10 +57,10 @@ public class CurrencyRatesPositiveTest extends BaseTest {
 
 
     @Test (dataProviderClass = DataProvidersClass.class, dataProvider = "Currencies",
-            description = "User should achieve exchange rate for current date for passed currency with table = c")
+            description = "User should achieve current bid and ask exchange rates and name {currency} for passed {code}")
     @Story("User should be able to achieve buy and sell prices of passed currency")
-    @Description("User should achieve exchange rate for current date for passed currency with table = c" +
-            " (table C of buy and sell prices of foreign currencies)")
+    @Description("User should achieve bid and ask exchange rates for current date for passed currency with table = c" +
+            " (table C provides buy and sell prices of foreign currencies)")
     @Severity(SeverityLevel.CRITICAL)
     @Link("http://api.nbp.pl/en.html")
     public void currentBidAskExchangeRateTest(String code, String currency) throws IOException {
