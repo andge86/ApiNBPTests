@@ -18,9 +18,10 @@ public class CurrencyRatesPositiveTest extends BaseTest {
 
 
 @Test (dataProviderClass = DataProvidersClass.class, dataProvider = "Currencies",
-       description = "User should achieve exchange rate for current date for passed currency with table = a" +
-               " (table A of middle exchange rates of foreign currencies)")
+       description = "Achieve current exchange rate and name {1} for {0} in table = a")
 @Story("User should be able to achieve average price of passed currency")
+@Description("User should achieve exchange rate for current date for passed currency with table = a" +
+        " (table A of middle exchange rates of foreign currencies)")
 @Severity(SeverityLevel.CRITICAL)
 @Link("http://api.nbp.pl/en.html")
     public void currentAverageExchangeRateTest(String code, String currency) throws IOException {
@@ -31,8 +32,10 @@ public class CurrencyRatesPositiveTest extends BaseTest {
                        .urlEncodingEnabled(false)
                        .filter(new AllureRestAssured())
                        .when()
-                       .param("?format=json")
+                       .param("format=json")
                        .get(ENDPOINT + "/api/exchangerates/rates/"+TABLE+"/"+code+"/");
+
+    System.out.println(response.body().asString());
 
     ObjectMapper objectMapper = new ObjectMapper();
     CurrentAverageExchangeRate currentAverageExchangeRate =
@@ -54,9 +57,10 @@ public class CurrencyRatesPositiveTest extends BaseTest {
 
 
     @Test (dataProviderClass = DataProvidersClass.class, dataProvider = "Currencies",
-            description = "User should achieve exchange rate for current date for passed currency with table = c" +
-                    " (table C of buy and sell prices of foreign currencies)")
+            description = "User should achieve exchange rate for current date for passed currency with table = c")
     @Story("User should be able to achieve buy and sell prices of passed currency")
+    @Description("User should achieve exchange rate for current date for passed currency with table = c" +
+            " (table C of buy and sell prices of foreign currencies)")
     @Severity(SeverityLevel.CRITICAL)
     @Link("http://api.nbp.pl/en.html")
     public void currentBidAskExchangeRateTest(String code, String currency) throws IOException {
