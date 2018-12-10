@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="1.814" tests="9" errors="0" skipped="0" failures="4">
+<testsuite name="TestSuite" time="2.051" tests="17" errors="0" skipped="0" failures="12">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.1+13-LTS"/>
@@ -20,20 +20,20 @@
     <property name="java.runtime.version" value="11.0.1+13-LTS"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="java.io.tmpdir" value="/var/folders/ny/fxdvp63x62q9zqrpmp89nw7h0000gp/T/"/>
+    <property name="java.io.tmpdir" value="/var/folders/bb/rd8k1cxj2zd95l6v3krsdk0h0000gp/T/"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.6.0/libexec/bin/m2.conf"/>
+    <property name="classworlds.conf" value="/Users/anotsek/Downloads/apache-maven-3.6.0/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/anotsek/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-    <property name="maven.conf" value="/usr/local/Cellar/maven/3.6.0/libexec/conf"/>
+    <property name="maven.conf" value="/Users/anotsek/Downloads/apache-maven-3.6.0/conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="55.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.14.1"/>
-    <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.6.0/libexec/lib/jansi-native"/>
+    <property name="library.jansi.path" value="/Users/anotsek/Downloads/apache-maven-3.6.0/lib/jansi-native"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="user.home" value="/Users/anotsek"/>
     <property name="user.timezone" value="Europe/Warsaw"/>
@@ -41,7 +41,7 @@
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="11"/>
     <property name="user.name" value="anotsek"/>
-    <property name="java.class.path" value="/usr/local/Cellar/maven/3.6.0/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.class.path" value="/Users/anotsek/Downloads/apache-maven-3.6.0/boot/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
@@ -52,7 +52,7 @@
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="11.0.1"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/usr/local/Cellar/maven/3.6.0/libexec"/>
+    <property name="maven.home" value="/Users/anotsek/Downloads/apache-maven-3.6.0"/>
     <property name="file.separator" value="/"/>
     <property name="java.version.date" value="2018-10-16"/>
     <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
@@ -63,12 +63,12 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="1.577">
+  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="1.845">
     <failure message="The following asserts failed:&#10;	Returned incorrect status code:  expected [400] but found [404],&#10;	Returned incorrect response body:  expected [400 Bad Request] but found [404 NotFound - Not Found - Brak danych]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
 	Returned incorrect status code:  expected [400] but found [404],
 	Returned incorrect response body:  expected [400 Bad Request] but found [404 NotFound - Not Found - Brak danych]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:31)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:37)
 </failure>
     <system-out><![CDATA[Configuring TestNG with: TestNG652Configurator
 ]]></system-out>
@@ -77,32 +77,96 @@ SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.143">
+  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.125">
+    <failure message="The following asserts failed:&#10;	Returned incorrect status code:  expected [400] but found [404],&#10;	Returned incorrect response body:  expected [400 Bad Request] but found [404 NotFound - Not Found - Brak danych]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
+	Returned incorrect status code:  expected [400] but found [404],
+	Returned incorrect response body:  expected [400 Bad Request] but found [404 NotFound - Not Found - Brak danych]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:37)
+</failure>
+  </testcase>
+  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.172">
     <failure message="The following asserts failed:&#10;	Returned incorrect response body:  expected [400 Bad Request] but found [400 BadRequest - Bad Request - Nieprawidłowa wartość parametru: {table}=&apos;r&apos;]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
 	Returned incorrect response body:  expected [400 Bad Request] but found [400 BadRequest - Bad Request - Nieprawidłowa wartość parametru: {table}='r']
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:31)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:37)
 </failure>
   </testcase>
-  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.925">
+  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.173">
     <failure message="The following asserts failed:&#10;	Returned incorrect status code:  expected [400] but found [404],&#10;	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
 	Returned incorrect status code:  expected [400] but found [404],
 	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:31)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:37)
 </failure>
   </testcase>
-  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.251">
+  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.113">
     <failure message="The following asserts failed:&#10;	Returned incorrect status code:  expected [400] but found [404],&#10;	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
 	Returned incorrect status code:  expected [400] but found [404],
 	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:31)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:37)
 </failure>
   </testcase>
-  <testcase name="currentAverageExchangeRateTest" classname="PositiveCurrencyTest" time="0.237"/>
-  <testcase name="currentAverageExchangeRateTest" classname="PositiveCurrencyTest" time="0.19"/>
-  <testcase name="currentAverageExchangeRateTest" classname="PositiveCurrencyTest" time="0.12"/>
-  <testcase name="currentAverageExchangeRateTest" classname="PositiveCurrencyTest" time="0.184"/>
-  <testcase name="currentAverageExchangeRateTest" classname="PositiveCurrencyTest" time="0.121"/>
+  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.128">
+    <failure message="The following asserts failed:&#10;	Returned incorrect status code:  expected [400] but found [404],&#10;	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
+	Returned incorrect status code:  expected [400] but found [404],
+	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:37)
+</failure>
+  </testcase>
+  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.762">
+    <failure message="The following asserts failed:&#10;	Returned incorrect status code:  expected [400] but found [404],&#10;	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
+	Returned incorrect status code:  expected [400] but found [404],
+	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:37)
+</failure>
+  </testcase>
+  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.151">
+    <failure message="The following asserts failed:&#10;	Returned incorrect status code:  expected [400] but found [404],&#10;	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
+	Returned incorrect status code:  expected [400] but found [404],
+	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:37)
+</failure>
+  </testcase>
+  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.864">
+    <failure message="The following asserts failed:&#10;	Returned incorrect status code:  expected [400] but found [404],&#10;	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
+	Returned incorrect status code:  expected [400] but found [404],
+	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:37)
+</failure>
+  </testcase>
+  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.095">
+    <failure message="The following asserts failed:&#10;	Returned incorrect status code:  expected [400] but found [404],&#10;	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
+	Returned incorrect status code:  expected [400] but found [404],
+	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:37)
+</failure>
+  </testcase>
+  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.106">
+    <failure message="The following asserts failed:&#10;	Returned incorrect status code:  expected [400] but found [404],&#10;	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
+	Returned incorrect status code:  expected [400] but found [404],
+	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:37)
+</failure>
+  </testcase>
+  <testcase name="incorrectCurrentAverageExchangeRateTest" classname="NegativeCurrencyTest" time="0.113">
+    <failure message="The following asserts failed:&#10;	Returned incorrect status code:  expected [400] but found [404],&#10;	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
+	Returned incorrect status code:  expected [400] but found [404],
+	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:37)
+</failure>
+  </testcase>
+  <testcase name="currentAverageExchangeRateTest" classname="PositiveCurrencyTest" time="0.206"/>
+  <testcase name="currentAverageExchangeRateTest" classname="PositiveCurrencyTest" time="0.109"/>
+  <testcase name="currentAverageExchangeRateTest" classname="PositiveCurrencyTest" time="0.092"/>
+  <testcase name="currentAverageExchangeRateTest" classname="PositiveCurrencyTest" time="0.362"/>
+  <testcase name="currentAverageExchangeRateTest" classname="PositiveCurrencyTest" time="0.277"/>
 </testsuite>

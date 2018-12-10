@@ -1,31 +1,87 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 4.86 sec <<< FAILURE! - in TestSuite
-incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 1.577 sec  <<< FAILURE!
+Tests run: 17, Failures: 12, Errors: 0, Skipped: 0, Time elapsed: 6.91 sec <<< FAILURE! - in TestSuite
+incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 1.845 sec  <<< FAILURE!
 java.lang.AssertionError: The following asserts failed:
 	Returned incorrect status code:  expected [400] but found [404],
 	Returned incorrect response body:  expected [400 Bad Request] but found [404 NotFound - Not Found - Brak danych]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:31)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:37)
 
-incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.143 sec  <<< FAILURE!
+incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.125 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	Returned incorrect status code:  expected [400] but found [404],
+	Returned incorrect response body:  expected [400 Bad Request] but found [404 NotFound - Not Found - Brak danych]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:37)
+
+incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.172 sec  <<< FAILURE!
 java.lang.AssertionError: The following asserts failed:
 	Returned incorrect response body:  expected [400 Bad Request] but found [400 BadRequest - Bad Request - Nieprawidłowa wartość parametru: {table}='r']
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:31)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:37)
 
-incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.925 sec  <<< FAILURE!
+incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.173 sec  <<< FAILURE!
 java.lang.AssertionError: The following asserts failed:
 	Returned incorrect status code:  expected [400] but found [404],
 	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:31)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:37)
 
-incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.251 sec  <<< FAILURE!
+incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.113 sec  <<< FAILURE!
 java.lang.AssertionError: The following asserts failed:
 	Returned incorrect status code:  expected [400] but found [404],
 	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:31)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:37)
+
+incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.128 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	Returned incorrect status code:  expected [400] but found [404],
+	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:37)
+
+incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.762 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	Returned incorrect status code:  expected [400] but found [404],
+	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:37)
+
+incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.151 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	Returned incorrect status code:  expected [400] but found [404],
+	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:37)
+
+incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.864 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	Returned incorrect status code:  expected [400] but found [404],
+	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:37)
+
+incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.095 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	Returned incorrect status code:  expected [400] but found [404],
+	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:37)
+
+incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.106 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	Returned incorrect status code:  expected [400] but found [404],
+	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:37)
+
+incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest)  Time elapsed: 0.113 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	Returned incorrect status code:  expected [400] but found [404],
+	Returned incorrect response body:  expected [400 Bad Request] but found [﻿404 NotFound]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at NegativeCurrencyTest.incorrectCurrentAverageExchangeRateTest(NegativeCurrencyTest.java:37)
 

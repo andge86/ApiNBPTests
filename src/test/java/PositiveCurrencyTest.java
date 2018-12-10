@@ -1,5 +1,9 @@
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import createRequest.Country;
+import createRequest.CurrentAverageExchangeRateRequest;
+import createRequest.RatesRequest;
 import io.qameta.allure.*;
 import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.response.Response;
@@ -47,6 +51,38 @@ public class PositiveCurrencyTest extends BaseTest{
     softAssertion.assertEquals(currentAverageExchangeRate.getRates().get(0).getEffectiveDate(), currentDate("yyyy-MM-dd"));
     softAssertion.assertAll();
 
+}
+
+@Test
+    public void createJsonTest() throws JsonProcessingException {
+
+    CurrentAverageExchangeRateRequest currentAverageExchangeRateRequest = new CurrentAverageExchangeRateRequest();
+
+    RatesRequest ratesRequest = new RatesRequest();
+    Country country = new Country();
+    country.setCode(840);
+    country.setName("USA");
+
+    Country country2 = new Country();
+    country2.setCode(980);
+    country2.setName("Ukraine");
+
+ratesRequest.setEffectiveDate("24.11.1986");
+ratesRequest.setNo("25/NPB/123");
+ratesRequest.setMid("2.345");
+ratesRequest.setCountry(country);
+ratesRequest.setCountry(country2);
+
+currentAverageExchangeRateRequest.setTable("A");
+currentAverageExchangeRateRequest.setCode("USD");
+currentAverageExchangeRateRequest.setCurrency("american dollar");
+currentAverageExchangeRateRequest.setRates(ratesRequest);
+
+
+    ObjectMapper objectMapper = new ObjectMapper();
+
+    Object json = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(currentAverageExchangeRateRequest);
+    System.out.println(json);
 }
 
 
